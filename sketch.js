@@ -1,8 +1,5 @@
-//let cloud1 = 50
-//let cloud2 = 30
-//let cloud3 = 70
-//let cloud4 = 40
-//use these emojis ⭐ 💫 ✨ 😌
+let cloud1 = 50
+let cloud2 = 250
 
 function setup() {
   createCanvas(400, 400);
@@ -10,6 +7,18 @@ function setup() {
 
 function draw() {
   background(72,209,204);
+  
+  noStroke();
+  fill(255,140,0);
+  fill(255,140,0);
+  circle(320,380,390);
+  //landscape3
+  
+   noStroke();
+  fill(255,140,0);
+  fill(255,140,0);
+  circle(100,380,390);
+  //landscape2
   
   fill(255,228,181);
   square(150,120,100);
@@ -44,9 +53,33 @@ function draw() {
   //gable
   
   noStroke();
-  fill(255,255,255);
+  fill(154,205,50);
   fill(154,205,50);
   circle(200,400,390);
   //landscape1
+  
+  noStroke();
+  fill('yellow');
+  fill(255,215,0);
+  circle(350,50,50);
+  //sun
+  
+  textSize(50);
+  noStroke();
+  fill('white');
+  text ("☁", cloud1,100);
+  cloud1 = cloud1 + 0.1;
+  
+  if (cloud1 > 400) {
+    cloud1 = -50
+  }
+  textSize(50);
+  noStroke();
+  fill('white');
+  text ("☁", cloud2,100);
+  cloud2 = cloud2 + 0.1;
+  
+  if (cloud2 > 400) {
+    cloud2 = -50   
+  }
 }
-//if()
